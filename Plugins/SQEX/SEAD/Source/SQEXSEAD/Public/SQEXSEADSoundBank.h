@@ -5,6 +5,7 @@
 #include "SQEXSEADSoundInfo.h"
 #include "SQEXSEADStreamingBufferSettings.h"
 #include "SQEXSEADSectionInfo.h"
+#include "Serialization/BulkData.h"
 #include "SQEXSEADSoundBank.generated.h"
 
 class USQEXSEADSoundAttenuation;
@@ -33,6 +34,9 @@ public:
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USQEXSEADSoundAttenuation* BankOverrideAttenuation;
+
+    /** Uncompressed wav data 16 bit in mono or stereo - stereo not allowed for multichannel data */
+    FByteBulkData RawData;
     
     USQEXSEADSoundBank();
 };
