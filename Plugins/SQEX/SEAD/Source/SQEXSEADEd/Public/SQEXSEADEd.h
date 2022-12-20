@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "SQEXSEADFactory.h"
 #include "Modules/ModuleInterface.h"
 
 class FSQEXSEADEdModule : public IModuleInterface

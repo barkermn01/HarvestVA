@@ -6,9 +6,9 @@ public class SQEXSEADEd : ModuleRules
 {
 	public SQEXSEADEd(ReadOnlyTargetRules Target) : base(Target)
 	{
-		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 		bLegacyPublicIncludePaths = false;
-        ShadowVariableWarningLevel = WarningLevel.Warning;
+		ShadowVariableWarningLevel = WarningLevel.Warning;
 		
 		PublicDependencyModuleNames.AddRange(new string[] {
             "Core",

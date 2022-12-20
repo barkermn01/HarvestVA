@@ -32,6 +32,62 @@
 			"Type": "DynamicLibrary"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEAD.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEAD.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADUtils.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADUtils.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADAnimNotifies.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADAnimNotifies.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADSequencerTracks.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADSequencerTracks.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADMusic.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADMusic.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADEvent.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADEvent.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADEd.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADEd.pdb",
+			"Type": "SymbolFile"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Runtime/ApexDestruction/Binaries/Win64/UE4Editor-ApexDestruction.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -333,62 +389,6 @@
 		},
 		{
 			"Path": "$(ProjectDir)/Plugins/LwSysDebugScreen/Binaries/Win64/UE4Editor-LwSysDebugScreen.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEAD.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEAD.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADUtils.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADUtils.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADAnimNotifies.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADAnimNotifies.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADSequencerTracks.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADSequencerTracks.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADMusic.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADMusic.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADEvent.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADEvent.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADEd.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor-SQEXSEADEd.pdb",
 			"Type": "SymbolFile"
 		},
 		{
@@ -2452,6 +2452,10 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Runtime/ApexDestruction/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2601,10 +2605,6 @@
 		},
 		{
 			"Path": "$(ProjectDir)/Plugins/LwSysDebugScreen/Binaries/Win64/UE4Editor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -3006,6 +3006,10 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/SQEXSEAD.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Runtime/ApexDestruction/ApexDestruction.uplugin",
 			"Type": "UFS"
 		},
@@ -3159,10 +3163,6 @@
 		},
 		{
 			"Path": "$(ProjectDir)/Plugins/SideFX_Labs/SideFX_Labs.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(ProjectDir)/Plugins/SQEX/SEAD/SQEXSEAD.uplugin",
 			"Type": "UFS"
 		},
 		{

@@ -1,6 +1,7 @@
 // Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
-#include "Modules/ModuleManager.h"
 #include "SQEXSEADEd.h"
+#include "Modules/ModuleManager.h"
+
 
 
 void FSQEXSEADEdModule::StartupModule()
@@ -14,5 +15,6 @@ void FSQEXSEADEdModule::ShutdownModule()
 	// we call this function before unloading the module.
 }
 
-	
-IMPLEMENT_MODULE(FDefaultGameModuleImpl, SQEXSEADEd);
+
+
+IMPLEMENT_MODULE(FDefaultModuleImpl, SQEXSEADEd);
