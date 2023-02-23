@@ -13,7 +13,10 @@ USQEXSEADSoundBank::USQEXSEADSoundBank(const FObjectInitializer& ObjectInitializ
 
 void USQEXSEADSoundBank::Serialize(FArchive& Ar)
 {
+  
     Super::Serialize(Ar);
-    Ar << RawData;
+        
+    Ar << Platforms;
+    RawData.Serialize(Ar, this);
 
 }

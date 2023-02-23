@@ -36,8 +36,10 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USQEXSEADSoundAttenuation* BankOverrideAttenuation;
 
-    
-    TArray<uint8> RawData;
+    TArray<FName> Platforms;
+
+   
+    FByteBulkData RawData;
 
     
     virtual void Serialize(FArchive& Ar) override;

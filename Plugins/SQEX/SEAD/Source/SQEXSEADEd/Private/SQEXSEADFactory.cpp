@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "SQEXSEADFactory.h"
+
 #include "AudioDeviceManager.h"
 #include "Sound/SoundNodeWavePlayer.h"
 
@@ -31,11 +32,22 @@ UObject* USQEXSEADFactory::FactoryCreateBinary(UClass* Class, UObject* InParent,
 {
 	GEditor->GetEditorSubsystem<UImportSubsystem>()->BroadcastAssetPreImport(this, Class, InParent, Name, Type);
 
-	const int32 BufferSize = BufferEnd - Buffer;
+	const uint64 BufferSize = BufferEnd - Buffer;
+	
 	TArray<uint8> RawSoundData;
+	RawSoundData.Empty(BufferEnd - Buffer);
+	RawSoundData.AddUninitialized(BufferEnd - Buffer);
+	FMemory::Memcpy(RawSoundData.GetData(), Buffer, RawSoundData.Num());
+
+
 	RawSoundData.Append(Buffer, BufferSize);
 	USQEXSEADSoundBank* NewSoundBank = NewObject<USQEXSEADSoundBank>(InParent, Name, Flags);
-	NewSoundBank->RawData = RawSoundData;
+	NewSoundBank->Platforms.Add(FName(TEXT("Windows")));
+	NewSoundBank->RawData.Lock(LOCK_READ_WRITE);
+	void* LockedData = NewSoundBank->RawData.Realloc(BufferEnd - Buffer);
+	FMemory::Memcpy(LockedData, Buffer, BufferEnd - Buffer);
+	NewSoundBank->RawData.Unlock();
+	
 
 	GEditor->GetEditorSubsystem<UImportSubsystem>()->BroadcastAssetPostImport(this, NewSoundBank);
 	
