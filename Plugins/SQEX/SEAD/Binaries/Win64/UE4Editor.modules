@@ -2,12 +2,12 @@
 	"BuildId": "17155196",
 	"Modules": 
 	{
-		"SQEXSEAD": "UE4Editor-SQEXSEAD.dll",
-		"SQEXSEADAnimNotifies": "UE4Editor-SQEXSEADAnimNotifies.dll",
+		"SQEXSEAD": "UE4Editor-SQEXSEAD-0914.dll",
+		"SQEXSEADAnimNotifies": "UE4Editor-SQEXSEADAnimNotifies-5963.dll",
 		"SQEXSEADEd": "UE4Editor-SQEXSEADEd.dll",
-		"SQEXSEADEvent": "UE4Editor-SQEXSEADEvent.dll",
-		"SQEXSEADMusic": "UE4Editor-SQEXSEADMusic.dll",
-		"SQEXSEADSequencerTracks": "UE4Editor-SQEXSEADSequencerTracks.dll",
-		"SQEXSEADUtils": "UE4Editor-SQEXSEADUtils.dll"
+		"SQEXSEADEvent": "UE4Editor-SQEXSEADEvent-9502.dll",
+		"SQEXSEADMusic": "UE4Editor-SQEXSEADMusic-0038.dll",
+		"SQEXSEADSequencerTracks": "UE4Editor-SQEXSEADSequencerTracks-9211.dll",
+		"SQEXSEADUtils": "UE4Editor-SQEXSEADUtils-0126.dll"
 	}
 }
